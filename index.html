@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="icon" href="https://umg.edu.gt/miumg/sesion_files/logo_white.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #496f81;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+        }
+
+        .image img{
+            width: 35vw;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+            width: 100vw;
+        }
+
+        .content{
+            width: 50vw;
+            height: 50vh;
+            margin: 0 3vw;
+            background-color: white;
+            border-radius: 30px;
+            border: transparent;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        input[type="text"] {
+            border: 1px solid #c7c6c6;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 3px 150px 6px 5px;
+            font-size: 16px;
+        }
+
+        input[type="password"] {
+            border: 1px solid #c7c6c6;
+            border-radius: 10px;
+            margin: 10px auto;
+            font-size: 16px;
+            padding: 3px 150px 6px 5px;
+        }
+
+        input[type="submit"] {
+            border: transparent;
+            border-radius: 15px;
+            color: white;
+            margin: 15px auto;
+            padding: 5px 50px 5px 50px;
+            background-color: #00A600;
+            transition: 0.5s;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            color: #ffffff;
+            background-color: #BBFFBB;
+            cursor: pointer;
+        }
+
+        .regis{
+            text-decoration: none;
+            border: transparent;
+            border-radius: 15px;
+            color: #ffffff;
+            margin: 15px;
+            padding: 5px 50px 5px 50px;
+            background-color: #0c3046;
+            transition: 0.5s;
+        }
+        .regis:hover{
+            text-decoration: none;
+            color: white;
+            background-color: #496f81;
+        }
+        footer{
+            position:absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: 100%;
+            height: 5vh;
+            color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #0c3046;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="image">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <div class = "content">
+            <h1>Iniciar Sesión</h1>
+            <form action="login.php" method="POST">
+                <label for="username">Usuario: </label>
+                <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
+                <label for="pass">Contraseña: </label>
+                <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+                <div class="buttons">
+                    <input type="submit" value="Ingresar">
+                    <a href="main/member.html" class="regis">Registro</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Estudiantes de 9° Semestre | UMG Chiquimulilla 2022</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Registro</title>
+  <link rel="icon" href="https://umg.edu.gt/miumg/sesion_files/logo_white.png">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #496f81;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+    .container {
+      width: 50vw;
+      height: 80vh;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 30px;
+      border: transparent;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    width: 30vw;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 12vh;
+  }
+
+  input {
+    border: 1px solid #c7c6c6;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 10px auto;
+    padding: 3px 150px 6px 5px;
+  }
+
+    button[type="submit"] {
+      border-collapse: collapse;
+      border: transparent;
+      border-radius: 15px;
+      color: black;
+      padding: 5px 50px 5px 50px;
+      background-color: #00A600;
+      transition: 0.5s;
+      color: white;
+      font-size: 16px;
+    }
+
+    button[type="submit"]:hover {
+      color: #ffffff;
+      background-color: #BBFFBB;
+      cursor: pointer;
+    }
+
+    .returnlogin {
+      text-decoration: none;
+      font-size: 13px;
+      border-collapse: collapse;
+      border: transparent;
+      border-radius: 15px;
+      color: white;
+      padding: 5px 50px 5px 50px;
+      background-color: #e60000;
+      transition: 0.5s;
+      font-size: 16px;
+    }
+
+    .returnlogin:hover {
+      background-color: #D9ddd4;
+      color: white;
+    }
+
+    footer{
+      position:absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 5vh;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #0c3046;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+
+      <form action="add.php" method="post">
+  
+        <div class="section">
+          <h1>Registro de Usuario</h1>
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleInputEmail1">Usuario:</label>
+          <input type="text" class="form-control" name="username" placeholder="Elige tu nombre de usuario" required />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nombre:</label>
+          <input type="text" class="form-control" name="name" placeholder="Ingresa tu nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña:</label>
+          <input type="password" class="form-control" name="password" placeholder="Ingresa tu contraseña" required />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Confirmar contraseña:</label>
+          <input type="password" class="form-control" name="cfpassword" placeholder="Confirma tu contraseña" required />
+        </div>
+        
+        <div class="buttons">
+          <button type="submit" class="btn btn-success">Registrar ahora</button>
+          <a name="" id="" class="returnlogin" href="../index.html" role="button">¿Ya tienes una cuenta? Volver al login</a>
+        </div>
+      </form>
+  
+    </div>
+  </main>
+  </form>
+  </div>
+  <footer>
+    <p>Desarrollado por Estudiantes de 9° Semestre | UMG Chiquimulilla 2022</p>
+</footer>
+</body>
+
+</html>
